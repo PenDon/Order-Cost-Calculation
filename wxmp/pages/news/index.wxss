@@ -1,0 +1,15 @@
+.news-items {
+}
+
+.news-items .item {
+    margin-bottom: 30rpx;
+}
+
+.news-items .item .title {
+    font-weight: bold;
+    margin-bottom: 20rpx;
+}
+
+.news-items .item .description {
+    color: #ccc;
+}

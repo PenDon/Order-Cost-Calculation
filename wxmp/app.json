@@ -1,0 +1,23 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/article/index",
+        "pages/article-detail/index",
+        "pages/news/index",
+        "pages/news-detail/index",
+        "pages/uc/account/index",
+        "pages/uc/change-password/index",
+        "pages/uc/index/index",
+        "pages/uc/login/index",
+        "pages/logs/logs",
+        "widgets/tabbar/tabbar"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "微信小程序",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

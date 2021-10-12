@@ -1,0 +1,31 @@
+<import src="/templates/header.wxml"/>
+<view class="container">
+    <view class="page button">
+        <view class="page__hd">
+            <template is="header" data="{{title: '会员登录'}}"/>
+        </view>
+        <view class="page__bd">
+            <mp-cells ext-class="form-cells" title="">
+                <mp-cell>
+                    <view>帐号</view>
+                    <view slot="footer">
+                        <input type="text" data-name="username" bindinput="bindField" value="{{form.username}}"></input>
+                    </view>
+                </mp-cell>
+                <mp-cell>
+                    <view>密码</view>
+                    <view slot="footer">
+                        <input type="password" data-name="password" bindinput="bindField" value="{{form.password}}"></input>
+                    </view>
+                </mp-cell>
+            </mp-cells>
+            <view class="button-sp-area">
+                <button class="weui-btn weui-btn_primary" bindtap="loginHandle">登录</button>
+                <button class="weui-btn weui-btn_primary" bindtap="wxLoginHandle">微信登录</button>
+            </view>
+        </view>
+        <view class="page__ft">
+            <tabbar-widget/>
+        </view>
+    </view>
+</view>

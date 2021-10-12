@@ -1,0 +1,37 @@
+{
+  "name": "邮件系统",
+  "author": "Peng",
+  "version": "0.0.1",
+  "description": "mail control",
+  "enabled_api": true,
+  "menus": [
+    {
+      "label": "发件人管理",
+      "url": [
+        "mail/addresser/index"
+      ],
+      "active": "controllerId=addresser"
+    },
+    {
+      "label": "收件人管理",
+      "url": [
+        "mail/addressee/index"
+      ],
+      "active": "controllerId=addressee"
+    },
+    {
+      "label": "邮件管理",
+      "url": [
+        "mail/email/index"
+      ],
+      "active": "controllerId=email"
+    },
+    {
+      "label": "模板管理",
+      "url": [
+        "mail/template/index"
+      ],
+      "active": "controllerId=template"
+    }
+  ]
+}

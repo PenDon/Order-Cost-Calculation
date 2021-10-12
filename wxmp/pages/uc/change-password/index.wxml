@@ -1,0 +1,38 @@
+<import src="/templates/header.wxml"/>
+<view class="container">
+    <view class="page button">
+        <view class="page__hd">
+            <template is="header" data="{{title: '用户中心', description: '修改您的登录密码'}}"/>
+        </view>
+        <view class="page__bd">
+            <form class="">
+                <mp-cells ext-class="form-cells" title="">
+                    <mp-cell>
+                        <view>旧密码</view>
+                        <view slot="footer">
+                            <input type="password" data-name="old_password" bindinput="bindField" value="{{form.old_password}}"></input>
+                        </view>
+                    </mp-cell>
+                    <mp-cell>
+                        <view>新密码</view>
+                        <view slot="footer">
+                            <input type="password" data-name="password" bindinput="bindField" value="{{form.password}}"></input>
+                        </view>
+                    </mp-cell>
+                    <mp-cell>
+                        <view>确认密码</view>
+                        <view slot="footer">
+                            <input type="password" data-name="confirm_password" bindinput="bindField" value="{{form.confirm_password}}"></input>
+                        </view>
+                    </mp-cell>
+                </mp-cells>
+                <view class="button-sp-area">
+                    <button class="weui-btn weui-btn_primary" bindtap="changePasswordHandle">确定</button>
+                </view>
+            </form>
+        </view>
+        <view class="page__ft">
+            <tabbar-widget/>
+        </view>
+    </view>
+</view>
